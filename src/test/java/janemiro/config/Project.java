@@ -1,4 +1,4 @@
-package cloud.autotests.config;
+package janemiro.config;
 
 import org.aeonbits.owner.ConfigFactory;
 

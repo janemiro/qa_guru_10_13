@@ -1,6 +1,6 @@
-package cloud.autotests.helpers;
+package janemiro.helpers;
 
-import cloud.autotests.config.Project;
+import janemiro.config.Project;
 import com.codeborne.selenide.Selenide;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;

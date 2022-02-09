@@ -1,8 +1,8 @@
-package cloud.autotests.tests.demowebshop;
+package janemiro.tests.demowebshop;
 
-import cloud.autotests.config.demowebshop.App;
-import cloud.autotests.helpers.AllureRestAssuredFilter;
-import cloud.autotests.tests.TestBase;
+import janemiro.config.demowebshop.App;
+import janemiro.helpers.AllureRestAssuredFilter;
+import janemiro.tests.TestBase;
 import com.codeborne.selenide.Configuration;
 import io.qameta.allure.Story;
 import io.restassured.RestAssured;

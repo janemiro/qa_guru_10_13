@@ -1,6 +1,6 @@
-package cloud.autotests.helpers;
+package janemiro.helpers;
 
-import cloud.autotests.config.Project;
+import janemiro.config.Project;
 import com.codeborne.selenide.Configuration;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;

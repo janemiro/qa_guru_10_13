@@ -1,4 +1,4 @@
-package cloud.autotests.docs;
+package janemiro.docs;
 
 import org.junit.jupiter.api.*;
 
