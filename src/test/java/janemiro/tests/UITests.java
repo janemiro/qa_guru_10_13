@@ -20,11 +20,11 @@ public class UITests extends TestBase {
     @Description("Here is the enhanced description of the test")
     @DisplayName("Example Test")
     void exampleTest() {
-        step("open " + URL, () -> {
+        step("Открыть " + URL, () -> {
             open(URL);
         });
 
-        step("click on banner - clickable", () -> {
+        step("Нажать на баннер", () -> {
             $(".top-slider-wrapper").click();
         });
     }
@@ -34,34 +34,16 @@ public class UITests extends TestBase {
     @DisplayName("Проверка основного баннера")
     @Severity(NORMAL)
     void bannerTest() {
-        step("open " + URL, () -> {
+        step("Открыть " + URL, () -> {
             open(URL);
         });
 
-        step("click on banner - clickable", () -> {
+        step("Нажать на основной баннер", () -> {
             $(".top-slider-wrapper").click();
         });
 
-        step("check redirect", () -> {
+        step("Проверить редирект на страницу предложения", () -> {
             $("hrefhref=https://www.petshop.ru/news/actions/");
-        });
-    }
-
-    @Test
-    @Description("Проверка баннера с Товаром дня")
-    @DisplayName("Товар дня")
-    @Severity(NORMAL)
-    void goodOfTheDayBannerTest() {
-        step("open " + URL, () -> {
-            open(URL);
-        });
-
-        step("кликнуть на баннер с Товаром дня", () -> {
-            $(".day-product__title").click();
-        });
-
-        step("проверка редиректа на страницу товара", () -> {
-            $("Акция ТОВАР ДНЯ!").click();
         });
     }
 
@@ -86,13 +68,13 @@ public class UITests extends TestBase {
 
 
     @Test
-    @Description("Page title should have header text")
+    @Description("На главной странице должен пристутствовать заголовок")
     @DisplayName("Smoke UI test")
     void titleTest() {
         step("open " + URL, () ->
             open(URL));
 
-        step("Page title should have text 'Товары для животных, зоотовары онлайн, корма для домашних животных купить в интернет-магазине Petshop.ru'", () -> {
+        step("Проверить текст заголовка на странице", () -> {
             String expectedTitle = "Товары для животных, зоотовары онлайн, корма для домашних животных купить в интернет-магазине Petshop.ru";
             String actualTitle = title();
 
@@ -101,7 +83,7 @@ public class UITests extends TestBase {
     }
 
     @Test
-    @Description("Page console log should not have errors")
+    @Description("Тест на проверку наличия SEVERE ошибок в консоли")
     @DisplayName("Smoke console test")
     void consoleShouldNotHaveErrorsTest() {
         step("Open url 'https://www.petshop.ru/'", () ->
